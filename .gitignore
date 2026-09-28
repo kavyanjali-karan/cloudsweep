@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+
+# build output
+dist
+
+# generated code (created by `bunx convex dev`)
+src/convex/_generated
+
+# environment & secrets — never commit these
+.env
+.env.*
+!.env.example
+
+# misc
+*.log
+.DS_Store
