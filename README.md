@@ -4,6 +4,8 @@ Find the S3 objects you pay for and never use. CloudSweep scans a bucket, flags
 zero-byte junk, stale backups/logs and never-cleaned temp files, and prices the
 waste in dollars per month using AWS's published storage prices.
 
+**Try it live: https://cloudsweep.netlify.app** (demo bucket, no AWS keys needed)
+
 ## What it does
 
 1. **Scan Demo Bucket** — explore the full product against a deterministic
