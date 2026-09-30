@@ -1,10 +1,14 @@
 # CloudSweep — AWS S3 Waste & Cost Finder
 
+[![CloudSweep CI](https://github.com/kavyanjali-karan/cloudsweep/actions/workflows/ci.yml/badge.svg)](https://github.com/kavyanjali-karan/cloudsweep/actions/workflows/ci.yml) [![tests: 21 passed](https://img.shields.io/badge/tests-21%20passed-2ea44f)](#tests) [![license: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![live demo](https://img.shields.io/badge/live-demo-brightgreen)](https://cloudsweep.netlify.app)
+
 Find the S3 objects you pay for and never use. CloudSweep scans a bucket, flags
 zero-byte junk, stale backups/logs and never-cleaned temp files, and prices the
 waste in dollars per month using AWS's published storage prices.
 
 **Try it live: https://cloudsweep.netlify.app** (demo bucket, no AWS keys needed)
+
+![CloudSweep findings table with per-object waste and monthly cost](docs/screenshot.png)
 
 ## What it does
 

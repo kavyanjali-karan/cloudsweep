@@ -1,0 +1,22 @@
+name: CloudSweep CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      # The test suite (waste rules + formatters) is self-contained:
+      # no dependency install needed, so this job is fast and deterministic.
+      - name: Run tests
+        run: bun test
